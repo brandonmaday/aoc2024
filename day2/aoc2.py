@@ -8,9 +8,6 @@ reports = [[int(level) for level in report.split(" ")] for report in lines]
 evalDirection = lambda a, b: "Same" if a == b else "Up" if a < b else "Down"
 isGradual = lambda a, b: 1 <= abs(a-b) <= 3
 
-#242
-#311
-
 def isSafe(levels, lastLevel=None, direction=None):
     if lastLevel is None:
         if len(levels) < 2:
