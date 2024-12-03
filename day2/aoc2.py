@@ -31,4 +31,4 @@ def isKindaSafe(levels, i = 0):
     else:
         return isKindaSafe(levels, i+1)
 
-print("part1", sum([isKindaSafe(levels) for levels in reports]))
+print("part2", sum([isKindaSafe(levels) for levels in reports]))
